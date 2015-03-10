@@ -8,6 +8,7 @@ import com.itsoft.learn.ejb.domain.Person;
 
 @Remote
 public interface PersonService {
+
 	List<Person> getPersonsList();
 
 	void addPerson();
