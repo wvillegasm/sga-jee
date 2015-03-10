@@ -2,9 +2,12 @@ package com.itsoft.learn.ejb.service;
 
 import java.util.List;
 
+import javax.ejb.Remote;
+
 import com.itsoft.learn.ejb.domain.Person;
 
-public interface PersonService {
+@Remote
+public interface PersonServiceRemote {
 
 	List<Person> getPersonsList();
 
@@ -16,6 +19,6 @@ public interface PersonService {
 
 	void deletePerson(Person p);
 
-	Person findPersonByEmail(Person p);	
+	Person findPersonByEmail(Person p);
 
 }

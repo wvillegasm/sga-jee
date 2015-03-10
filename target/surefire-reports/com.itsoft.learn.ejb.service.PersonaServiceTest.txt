@@ -1,0 +1,70 @@
+-------------------------------------------------------------------------------
+Test set: com.itsoft.learn.ejb.service.PersonaServiceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 72.362 sec <<< FAILURE!
+test(com.itsoft.learn.ejb.service.PersonaServiceTest)  Time elapsed: 72.079 sec  <<< ERROR!
+javax.naming.NamingException: Lookup failed for 'java:global/sga-jee/PersonImpl!com.itsoft.learn.ejb.service.impl.PersonServiceRemote' in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NamingException: Unable to acquire SerialContextProvider for SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is org.omg.CORBA.COMM_FAILURE: FINE: 00410001: Connection failure: socketType: IIOP_CLEAR_TEXT; hostname: localhost; port: 3700  vmcid: OMG  minor code: 1  completed: No]]
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:491)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:438)
+	at javax.naming.InitialContext.lookup(InitialContext.java:411)
+	at com.itsoft.learn.ejb.service.PersonaServiceTest.init(PersonaServiceTest.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: javax.naming.NamingException: Unable to acquire SerialContextProvider for SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is org.omg.CORBA.COMM_FAILURE: FINE: 00410001: Connection failure: socketType: IIOP_CLEAR_TEXT; hostname: localhost; port: 3700  vmcid: OMG  minor code: 1  completed: No]
+	at com.sun.enterprise.naming.impl.SerialContext.getProvider(SerialContext.java:334)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:477)
+	... 32 more
+Caused by: org.omg.CORBA.COMM_FAILURE: FINE: 00410001: Connection failure: socketType: IIOP_CLEAR_TEXT; hostname: localhost; port: 3700  vmcid: OMG  minor code: 1  completed: No
+	at com.sun.proxy.$Proxy20.connectFailure(Unknown Source)
+	at com.sun.corba.ee.impl.transport.ConnectionImpl.<init>(ConnectionImpl.java:253)
+	at com.sun.corba.ee.impl.transport.ConnectionImpl.<init>(ConnectionImpl.java:276)
+	at com.sun.corba.ee.impl.transport.ContactInfoImpl.createConnection(ContactInfoImpl.java:129)
+	at com.sun.corba.ee.impl.protocol.ClientRequestDispatcherImpl.beginRequest(ClientRequestDispatcherImpl.java:242)
+	at com.sun.corba.ee.impl.protocol.ClientDelegateImpl.request(ClientDelegateImpl.java:220)
+	at com.sun.corba.ee.impl.protocol.ClientDelegateImpl.is_a(ClientDelegateImpl.java:378)
+	at org.omg.CORBA.portable.ObjectImpl._is_a(ObjectImpl.java:130)
+	at org.omg.CosNaming.NamingContextHelper.narrow(NamingContextHelper.java:69)
+	at com.sun.enterprise.naming.impl.SerialContext$ProviderCacheKey.getNameService(SerialContext.java:1205)
+	at com.sun.enterprise.naming.impl.SerialContext.getRemoteProvider(SerialContext.java:393)
+	at com.sun.enterprise.naming.impl.SerialContext.getProvider(SerialContext.java:329)
+	... 33 more
+Caused by: java.lang.RuntimeException: java.net.ConnectException: Connection refused
+	at org.glassfish.enterprise.iiop.impl.IIOPSSLSocketFactory.createSocket(IIOPSSLSocketFactory.java:344)
+	at com.sun.corba.ee.impl.transport.ConnectionImpl.<init>(ConnectionImpl.java:250)
+	... 43 more
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.connect0(Native Method)
+	at sun.nio.ch.Net.connect(Net.java:465)
+	at sun.nio.ch.Net.connect(Net.java:457)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:670)
+	at com.sun.corba.ee.impl.misc.ORBUtility.openSocketChannel(ORBUtility.java:110)
+	at org.glassfish.enterprise.iiop.impl.IIOPSSLSocketFactory.createSocket(IIOPSSLSocketFactory.java:329)
+	... 44 more
+

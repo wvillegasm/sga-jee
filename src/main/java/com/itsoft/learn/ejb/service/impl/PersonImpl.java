@@ -7,9 +7,10 @@ import javax.ejb.Stateless;
 
 import com.itsoft.learn.ejb.domain.Person;
 import com.itsoft.learn.ejb.service.PersonService;
+import com.itsoft.learn.ejb.service.PersonServiceRemote;
 
 @Stateless
-public class PersonImpl implements PersonService {
+public class PersonImpl implements PersonServiceRemote, PersonService {
 
 	public List<Person> getPersonsList() {
 		List<Person> persons = new ArrayList<Person>();

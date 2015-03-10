@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="72.079" errors="1" skipped="0" tests="1" name="com.itsoft.learn.ejb.service.PersonaServiceTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/jdk1.7.0_60/jre/lib/amd64"/>
+    <property name="java.vm.version" value="24.60-b09"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/wilfredo/data/projects/struts-workspace/sga-jee"/>
+    <property name="java.runtime.version" value="1.7.0_60-b19"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/jdk1.7.0_60/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/home/wilfredo/data/projects/struts-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf8110327573381193070.tmp"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="51.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="3.13.0-24-generic"/>
+    <property name="user.home" value="/home/wilfredo"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.7"/>
+    <property name="user.name" value="wilfredo"/>
+    <property name="java.class.path" value="/home/wilfredo/data/programs/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.5.1.20150109-1819/jars/plexus-classworlds-2.5.1.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="java.vm.specification.version" value="1.7"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/jdk1.7.0_60/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.7.0_60"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/jdk1.7.0_60/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/jdk1.7.0_60/jre/lib/resources.jar:/usr/lib/jvm/jdk1.7.0_60/jre/lib/rt.jar:/usr/lib/jvm/jdk1.7.0_60/jre/lib/sunrsasign.jar:/usr/lib/jvm/jdk1.7.0_60/jre/lib/jsse.jar:/usr/lib/jvm/jdk1.7.0_60/jre/lib/jce.jar:/usr/lib/jvm/jdk1.7.0_60/jre/lib/charsets.jar:/usr/lib/jvm/jdk1.7.0_60/jre/lib/jfr.jar:/usr/lib/jvm/jdk1.7.0_60/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/home/wilfredo/data/projects/struts-workspace/sga-jee/EMBEDDED"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase time="72.079" classname="com.itsoft.learn.ejb.service.PersonaServiceTest" name="test">
+    <error message="Lookup failed for &apos;java:global/sga-jee/PersonImpl!com.itsoft.learn.ejb.service.impl.PersonServiceRemote&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl}" type="javax.naming.NamingException">javax.naming.NamingException: Lookup failed for &apos;java:global/sga-jee/PersonImpl!com.itsoft.learn.ejb.service.impl.PersonServiceRemote&apos; in SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is javax.naming.NamingException: Unable to acquire SerialContextProvider for SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is org.omg.CORBA.COMM_FAILURE: FINE: 00410001: Connection failure: socketType: IIOP_CLEAR_TEXT; hostname: localhost; port: 3700  vmcid: OMG  minor code: 1  completed: No]]
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:491)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:438)
+	at javax.naming.InitialContext.lookup(InitialContext.java:411)
+	at com.itsoft.learn.ejb.service.PersonaServiceTest.init(PersonaServiceTest.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: javax.naming.NamingException: Unable to acquire SerialContextProvider for SerialContext[myEnv={java.naming.factory.initial=com.sun.enterprise.naming.impl.SerialInitContextFactory, java.naming.factory.url.pkgs=com.sun.enterprise.naming, java.naming.factory.state=com.sun.corba.ee.impl.presentation.rmi.JNDIStateFactoryImpl} [Root exception is org.omg.CORBA.COMM_FAILURE: FINE: 00410001: Connection failure: socketType: IIOP_CLEAR_TEXT; hostname: localhost; port: 3700  vmcid: OMG  minor code: 1  completed: No]
+	at com.sun.enterprise.naming.impl.SerialContext.getProvider(SerialContext.java:334)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:477)
+	... 32 more
+Caused by: org.omg.CORBA.COMM_FAILURE: FINE: 00410001: Connection failure: socketType: IIOP_CLEAR_TEXT; hostname: localhost; port: 3700  vmcid: OMG  minor code: 1  completed: No
+	at com.sun.proxy.$Proxy20.connectFailure(Unknown Source)
+	at com.sun.corba.ee.impl.transport.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:253)
+	at com.sun.corba.ee.impl.transport.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:276)
+	at com.sun.corba.ee.impl.transport.ContactInfoImpl.createConnection(ContactInfoImpl.java:129)
+	at com.sun.corba.ee.impl.protocol.ClientRequestDispatcherImpl.beginRequest(ClientRequestDispatcherImpl.java:242)
+	at com.sun.corba.ee.impl.protocol.ClientDelegateImpl.request(ClientDelegateImpl.java:220)
+	at com.sun.corba.ee.impl.protocol.ClientDelegateImpl.is_a(ClientDelegateImpl.java:378)
+	at org.omg.CORBA.portable.ObjectImpl._is_a(ObjectImpl.java:130)
+	at org.omg.CosNaming.NamingContextHelper.narrow(NamingContextHelper.java:69)
+	at com.sun.enterprise.naming.impl.SerialContext$ProviderCacheKey.getNameService(SerialContext.java:1205)
+	at com.sun.enterprise.naming.impl.SerialContext.getRemoteProvider(SerialContext.java:393)
+	at com.sun.enterprise.naming.impl.SerialContext.getProvider(SerialContext.java:329)
+	... 33 more
+Caused by: java.lang.RuntimeException: java.net.ConnectException: Connection refused
+	at org.glassfish.enterprise.iiop.impl.IIOPSSLSocketFactory.createSocket(IIOPSSLSocketFactory.java:344)
+	at com.sun.corba.ee.impl.transport.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:250)
+	... 43 more
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.connect0(Native Method)
+	at sun.nio.ch.Net.connect(Net.java:465)
+	at sun.nio.ch.Net.connect(Net.java:457)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:670)
+	at com.sun.corba.ee.impl.misc.ORBUtility.openSocketChannel(ORBUtility.java:110)
+	at org.glassfish.enterprise.iiop.impl.IIOPSSLSocketFactory.createSocket(IIOPSSLSocketFactory.java:329)
+	... 44 more
+</error>
+    <system-err>org.omg.CORBA.COMM_FAILURE: FINE: 00410001: Connection failure: socketType: IIOP_CLEAR_TEXT; hostname: localhost; port: 3700  vmcid: OMG  minor code: 1  completed: No
+	at com.sun.proxy.$Proxy20.connectFailure(Unknown Source)
+	at com.sun.corba.ee.impl.transport.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:253)
+	at com.sun.corba.ee.impl.transport.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:276)
+	at com.sun.corba.ee.impl.transport.ContactInfoImpl.createConnection(ContactInfoImpl.java:129)
+	at com.sun.corba.ee.impl.protocol.ClientRequestDispatcherImpl.beginRequest(ClientRequestDispatcherImpl.java:242)
+	at com.sun.corba.ee.impl.protocol.ClientDelegateImpl.request(ClientDelegateImpl.java:220)
+	at com.sun.corba.ee.impl.protocol.ClientDelegateImpl.is_a(ClientDelegateImpl.java:378)
+	at org.omg.CORBA.portable.ObjectImpl._is_a(ObjectImpl.java:130)
+	at org.omg.CosNaming.NamingContextHelper.narrow(NamingContextHelper.java:69)
+	at com.sun.enterprise.naming.impl.SerialContext$ProviderCacheKey.getNameService(SerialContext.java:1205)
+	at com.sun.enterprise.naming.impl.SerialContext.getRemoteProvider(SerialContext.java:393)
+	at com.sun.enterprise.naming.impl.SerialContext.getProvider(SerialContext.java:329)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:477)
+	at com.sun.enterprise.naming.impl.SerialContext.lookup(SerialContext.java:438)
+	at javax.naming.InitialContext.lookup(InitialContext.java:411)
+	at com.itsoft.learn.ejb.service.PersonaServiceTest.init(PersonaServiceTest.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.RuntimeException: java.net.ConnectException: Connection refused
+	at org.glassfish.enterprise.iiop.impl.IIOPSSLSocketFactory.createSocket(IIOPSSLSocketFactory.java:344)
+	at com.sun.corba.ee.impl.transport.ConnectionImpl.&lt;init&gt;(ConnectionImpl.java:250)
+	... 43 more
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.Net.connect0(Native Method)
+	at sun.nio.ch.Net.connect(Net.java:465)
+	at sun.nio.ch.Net.connect(Net.java:457)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:670)
+	at com.sun.corba.ee.impl.misc.ORBUtility.openSocketChannel(ORBUtility.java:110)
+	at org.glassfish.enterprise.iiop.impl.IIOPSSLSocketFactory.createSocket(IIOPSSLSocketFactory.java:329)
+	... 44 more
+</system-err>
+  </testcase>
+</testsuite>

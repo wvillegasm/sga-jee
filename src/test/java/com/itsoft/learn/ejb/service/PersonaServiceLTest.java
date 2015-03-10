@@ -1,34 +1,39 @@
 package com.itsoft.learn.ejb.service;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 import java.util.List;
 
+import javax.ejb.embeddable.EJBContainer;
 import javax.naming.Context;
-import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import com.itsoft.learn.ejb.domain.Person;
 import com.itsoft.learn.ejb.service.impl.PersonImpl;
 
-public class PersonaServiceTest {
+public class PersonaServiceLTest {
 
 	private static Context context;
-	private static PersonService person;
+	private static PersonServiceRemote person;
 	
 	@Before
 	public void init() throws NamingException{
-		context = new InitialContext();
-		person = (PersonImpl)context.lookup("java:global/sga-jee/PersonImpl!com.itsoft.learn.ejb.service.impl.PersonService");
+		EJBContainer container = EJBContainer.createEJBContainer();
+		context = container.getContext();
+		person = (PersonImpl)context.lookup("java:global/classes/PersonImpl!com.itsoft.learn.ejb.service.impl.PersonService");
 	}
 	
 	@Test
 	public void test() {
+		
+		assertNotNull(person);
+		
 		List<Person> personResult = person.getPersonsList();
+		
 		assertTrue(personResult.size() == 4);
 	}
 
