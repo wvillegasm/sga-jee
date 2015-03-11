@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 
 import com.itsoft.learn.ejb.domain.Person;
 import com.itsoft.learn.ejb.service.PersonService;
@@ -11,6 +13,9 @@ import com.itsoft.learn.ejb.service.PersonServiceRemote;
 
 @Stateless
 public class PersonImpl implements PersonServiceRemote, PersonService {
+	
+	@PersistenceContext(unitName="")
+	EntityManager em;
 
 	public List<Person> getPersonsList() {
 		List<Person> persons = new ArrayList<Person>();

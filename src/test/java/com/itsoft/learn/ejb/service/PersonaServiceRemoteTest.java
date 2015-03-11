@@ -8,7 +8,6 @@ import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 

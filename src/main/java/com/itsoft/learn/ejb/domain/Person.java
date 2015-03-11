@@ -2,16 +2,37 @@ package com.itsoft.learn.ejb.domain;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="persons")
 public class Person implements Serializable {
 	
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="person_id")
 	private Long personId;
+	
+	@Column(name="last_name", nullable=false, length=25)
 	private String lastName;
+	
+	@Column(nullable=false, length=25)
 	private String name;
+	
+	@Column(nullable=false, length=50)
 	private String email;
+	
+	@Column(length=9)
 	private String phone;
 
 	public Person() {
