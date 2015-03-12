@@ -3,10 +3,10 @@ package com.itsoft.learn.ejb.service.impl;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.ejb.EJB;
 import javax.ejb.Stateless;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
 
+import com.itsoft.learn.eis.PersonDAO;
 import com.itsoft.learn.ejb.domain.Person;
 import com.itsoft.learn.ejb.service.PersonService;
 import com.itsoft.learn.ejb.service.PersonServiceRemote;
@@ -14,41 +14,31 @@ import com.itsoft.learn.ejb.service.PersonServiceRemote;
 @Stateless
 public class PersonImpl implements PersonServiceRemote, PersonService {
 	
-	@PersistenceContext(unitName="")
-	EntityManager em;
+	@EJB
+	private PersonDAO personDao;
 
 	public List<Person> getPersonsList() {
-		List<Person> persons = new ArrayList<Person>();
-		persons.add(new Person("Juarez", "Pedro", "pjuarez@gmail.com","864-564-5886"));
-		persons.add(new Person("Alicia", "Mendoza", "amendoza@gmail.com","864-564-5886"));
-		persons.add(new Person("Rita", "Cruz", "rcruz@gmail.com","864-564-5886"));
-		persons.add(new Person("Veronica", "Mars", "vmars@gmail.com","864-564-5886"));
-		return persons;
+		return personDao.findAllPersons();
 	}
 
-	public void addPerson() {
-		// TODO Auto-generated method stub
-
+	public void addPerson(Person p) {
+		personDao.insertPerson(p);
 	}
 
-	public Person findPersonById() {
-		// TODO Auto-generated method stub
-		return null;
+	public Person findPersonById(Long id) {
+		return personDao.findPersonById(id);
 	}
 
 	public void editPerson(Person p) {
-		// TODO Auto-generated method stub
-
+		personDao.updatePerson(p);
 	}
 
 	public void deletePerson(Person p) {
-		// TODO Auto-generated method stub
-
+		personDao.deletePerson(p);
 	}
 
 	public Person findPersonByEmail(Person p) {
-		// TODO Auto-generated method stub
-		return null;
+		return personDao.findPersonByEmail(p);
 	}
 
 }

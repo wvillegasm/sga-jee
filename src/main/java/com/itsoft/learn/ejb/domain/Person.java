@@ -7,32 +7,37 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="persons")
+@NamedQueries({
+		@NamedQuery(name = "Person.findAll", query = "SELECT p FROM Person ORDER BY p.personId"),
+		@NamedQuery(name = "Person.FindById", query = "SELECT p FROM Person WHERE p.personId = :id") })
+@Table(name = "persons")
 public class Person implements Serializable {
-	
+
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
+
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="person_id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "person_id")
 	private Long personId;
-	
-	@Column(name="last_name", nullable=false, length=25)
+
+	@Column(name = "last_name", nullable = false, length = 25)
 	private String lastName;
-	
-	@Column(nullable=false, length=25)
+
+	@Column(nullable = false, length = 25)
 	private String name;
-	
-	@Column(nullable=false, length=50)
+
+	@Column(nullable = false, length = 50)
 	private String email;
-	
-	@Column(length=9)
+
+	@Column(length = 9)
 	private String phone;
 
 	public Person() {
